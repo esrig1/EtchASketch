@@ -10,11 +10,10 @@
 }
 
 .box {
-    background-color: blue;
+    background-color: white;
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    padding: 30px;
     margin: 0px;
 }
 
