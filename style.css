@@ -1,0 +1,13 @@
+
+.row {
+    display: flex;
+
+}
+
+.box {
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    margin: 0px;
+}
