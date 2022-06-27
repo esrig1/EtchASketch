@@ -1,4 +1,9 @@
+#container {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
 
+}
 .row {
     display: flex;
 
@@ -8,6 +13,11 @@
     background-color: blue;
     border-style: solid;
     border-color: black;
+    border-width: 1px;
     padding: 30px;
     margin: 0px;
+}
+
+#button {
+    text-align: center;
 }

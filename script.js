@@ -29,7 +29,13 @@ function startGame() {
         dimension = prompt("Your input was not a natural number (an integer greater than 0). Please enter a natural number.");
         
     }
+    
     createRows(dimension); createCols(dimension); 
+    let boxPercent = 100/dimension;
+    const boxArr = document.querySelectorAll(".box");
+    boxArr.forEach((box) => {
+        box.style.padding = "{}%".format(boxPercent);
+    });
 }
 
 startGame();
