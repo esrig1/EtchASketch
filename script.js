@@ -14,10 +14,6 @@ function createCols(numCols) {
         for(let i = 0; i < numCols; i++) {
         let tempBox = document.createElement("div");
         tempBox.className = "box";
-        tempBox.addEventListener("hover", (box) => {
-            box.style.backgroundColor = "black";
-            
-        });
         row.appendChild(tempBox);
     }
     });
@@ -39,8 +35,11 @@ function startGame() {
     const boxArr = document.querySelectorAll(".box");
     boxArr.forEach((box) => {
         box.style.padding = boxPercent + "px";
-        
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor  = "black";
+        });
     });
+    
 }
 
 startGame();
